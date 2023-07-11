@@ -39,9 +39,9 @@ Após a execução, a aplicação vai para outra página.
 
 Caso haja retorno daquele comando, ele é exibido em tela:
 
-![Tela inicial](./documentation/Result%20screen%201.png)
+![Tela de resultado 1](./documentation/Result%20screen%201.png)
 
 Caso seja um comando sem retorno, é reproduzido em tela qual foi o comando executado:
 
-![Tela inicial](./documentation/Result%20screen%202.png)
-![Tela inicial](./documentation/Terminal.png)
+![Tela de resultado 1](./documentation/Result%20screen%202.png)
+![Terminal](./documentation/Terminal.png)
