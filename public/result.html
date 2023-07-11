@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Linguagem de Programação Script</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Linguagem de Programação Script</h1>
+    </header>
+    <main>
+      <div id="result"></div>
+    </main>
+    <footer>
+      <hr />
+      <h4>Rafaella Sampaio de Alencar - 469886</h4>
+      <h4>Sistemas e Mídias Digitais - Universidade Federal do Ceará</h4>
+    </footer>
+
+    <script nonce="test">
+      document.addEventListener("DOMContentLoaded", () => {
+        const cookies = document.cookie.split(";");
+        cookies?.forEach((cookie) => {
+          if (cookie.trim().slice(0, 7) === "result=") {
+            const result = cookie.trim().slice(7);
+            document.querySelector("#result").innerHTML =
+              decodeURIComponent(result);
+          }
+        });
+
+        // const username = document.cookie.slice(5);
+        // document.querySelector("#user_h3").innerHTML += username;
+      });
+    </script>
+  </body>
+</html>
